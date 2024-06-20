@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag jobiniah/runpod-smaug:$(date +%s) --build-arg MODEL_NAME="abacusai/Smaug-Llama-3-70B-Instruct-32K" --build-arg BASE_PATH="/models"
+      run: docker build . --file Dockerfile --tag jobiniah/runpod-gradient:$(date +%s) --build-arg MODEL_NAME="gradientai/Llama-3-8B-Instruct-Gradient-1048k" --build-arg BASE_PATH="/models"
